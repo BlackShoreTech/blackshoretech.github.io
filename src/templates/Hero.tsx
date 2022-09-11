@@ -4,31 +4,12 @@ import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
-import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-import { Logo } from './Logo';
+import NavBar from './NavBar';
 
 const Hero = () => (
   <Background color="bg-gray-900">
+    <NavBar />
     <div className="relative bg-[url('/assets/images/background.svg')] bg-no-repeat bg-cover bg-fixed bg-[position:left_15rem] top-0 left-0 h-1/4">
-      <Section yPadding="py-6">
-        <NavbarTwoColumns logo={<Logo />}>
-          <li>
-            <Link href="/">
-              <a>About us</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <a>Services</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <a>Blog</a>
-            </Link>
-          </li>
-        </NavbarTwoColumns>
-      </Section>
       <Section yPadding="pt-20 pb-32">
         <HeroOneButton
           title={
