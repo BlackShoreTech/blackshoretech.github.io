@@ -1,6 +1,13 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      sans: ['Siara medium', 'ui-sans-serif', 'system-ui'],
+      serif: ['ui-serif', 'Georgia'],
+      mono: ['ui-monospace', 'SFMono-Regular'],
+      display: ['Oswald'],
+      body: ['"Open Sans"'],
+    },
     fontSize: {
       xs: '0.75rem',
       sm: '0.875rem',
@@ -14,6 +21,9 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/assets/images/background.svg')",
+      },
       colors: {
         primary: {
           100: '#E6F6FE',
@@ -35,7 +45,7 @@ module.exports = {
           600: '#718096',
           700: '#4a5568',
           800: '#2d3748',
-          900: '#1a202c',
+          900: '#00121F',
         },
       },
       lineHeight: {
