@@ -20,11 +20,12 @@ const Hero = () => (
           }
           description={
             <span className="text-primary-100">
-              The easiest way to build a React landing page in seconds.
+              This website is still under construction. Pay no attention to the
+              Lorum Ipsum :)
             </span>
           }
           button={
-            <Link href="https://creativedesignsguru.com/category/nextjs/">
+            <Link href="mailto:brendan@blackshoretech.com">
               <a>
                 <Button xl>Contact Us</Button>
               </a>

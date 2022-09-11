@@ -10,7 +10,7 @@ const Banner = () => (
       title="Get in Touch"
       subtitle="Talk to us about a free consultation"
       button={
-        <Link href="https://creativedesignsguru.com/category/nextjs/">
+        <Link href="mailto:brendan@blackshoretech.com">
           <a>
             <Button>Contact Us</Button>
           </a>
