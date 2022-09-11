@@ -24,9 +24,10 @@ jobs:
         run: |
           npm i --legacy-peer-deps
           npm run build-prod
-          npm run export
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          cname: www.blackshoretech.com
           publish_dir: ./out
