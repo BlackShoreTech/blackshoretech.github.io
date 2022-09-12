@@ -1,7 +1,5 @@
-import Link from 'next/link';
-
 import { Background } from '../background/Background';
-import { Button } from '../button/Button';
+import { Button } from '../components/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import NavBar from './NavBar';
@@ -25,11 +23,13 @@ const Hero = () => (
             </span>
           }
           button={
-            <Link href="mailto:brendan@blackshoretech.com">
-              <a>
-                <Button xl>Contact Us</Button>
-              </a>
-            </Link>
+            <Button
+              onClick={() => {
+                window.scrollTo({ top: 10000, behavior: 'smooth' });
+              }}
+            >
+              Contact Us
+            </Button>
           }
         />
       </Section>
