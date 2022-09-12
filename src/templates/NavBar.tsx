@@ -13,9 +13,16 @@ const NavBar = () => (
         </Link>
       </li>
       <li>
-        <Link href="/">
-          <a>Services</a>
-        </Link>
+        <a
+          onClick={() => {
+            window.scrollBy({
+              top: window.innerHeight,
+              behavior: 'smooth',
+            });
+          }}
+        >
+          Services
+        </a>
       </li>
       <li>
         <Link href="/">

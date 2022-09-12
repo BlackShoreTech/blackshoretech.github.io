@@ -1,17 +1,17 @@
-import { ReactNode } from 'react';
+import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react';
 
 type ISectionProps = {
   title?: string;
   description?: string;
   yPadding?: string;
   children: ReactNode;
-};
+} & DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 
 const Section = (props: ISectionProps) => (
   <div
     className={`max-w-screen-lg mx-auto px-3 ${
       props.yPadding ? props.yPadding : 'py-16'
-    }`}
+    } ${props.className}`}
   >
     {(props.title || props.description) && (
       <div className="mb-12 text-center">
