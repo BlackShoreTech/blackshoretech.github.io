@@ -17,13 +17,14 @@ const Hero = () => (
             </>
           }
           description={
-            <span className="text-primary-100">
-              This website is still under construction. Pay no attention to the
-              Lorum Ipsum :)
+            <span className="text-primary-100 text-2xl">
+              We turn your big ideas into reality - quickly, efficiently, and
+              affordably.
             </span>
           }
           button={
             <Button
+              xl
               onClick={() => {
                 window.scrollTo({ top: 10000, behavior: 'smooth' });
               }}

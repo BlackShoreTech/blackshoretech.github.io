@@ -4,7 +4,10 @@ import React, {
   ForwardedRef,
 } from 'react';
 
-type ITextInputProps = {
+import classNames from 'classnames';
+
+type IButtonProps = {
+  xl?: boolean;
   children: string;
 } & DetailedHTMLProps<
   ButtonHTMLAttributes<HTMLButtonElement>,
@@ -12,15 +15,45 @@ type ITextInputProps = {
 >;
 
 export const Button = React.forwardRef(
-  (props: ITextInputProps, ref: ForwardedRef<HTMLButtonElement>) => (
-    <button
-      ref={ref}
-      {...props}
-      className="rounded-lg bg-primary-500 text-lg font-semibold py-2 px-4 text-white hover:bg-primary-600 my-2"
-    >
-      {props.children}
-    </button>
-  )
+  (props: IButtonProps, ref: ForwardedRef<HTMLButtonElement>) => {
+    const btnClass = classNames(
+      {
+        btn: true,
+        'btn-xl': props.xl,
+        'btn-base': !props.xl,
+        'btn-primary': true,
+      },
+      props.className
+    );
+    return (
+      <button ref={ref} {...props} className={btnClass}>
+        {props.children}
+        <style jsx>
+          {`
+            .btn {
+              @apply inline-block rounded-md text-center;
+            }
+
+            .btn-base {
+              @apply text-lg font-semibold py-2 px-4;
+            }
+
+            .btn-xl {
+              @apply font-extrabold text-xl py-4 px-6;
+            }
+
+            .btn-primary {
+              @apply text-white bg-primary-500;
+            }
+
+            .btn-primary:hover {
+              @apply bg-primary-600;
+            }
+          `}
+        </style>
+      </button>
+    );
+  }
 );
 
 Button.displayName = 'Button';

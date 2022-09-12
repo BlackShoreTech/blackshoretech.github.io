@@ -18,14 +18,7 @@ type IFormInputs = {
 function ShortAnswerInput({ id, type }: IFormInputs) {
   const { register, label } = useShortAnswerInput(id);
 
-  return (
-    <TextInput
-      type={type}
-      label={label}
-      {...register()}
-      className="bg-slate-600"
-    />
-  );
+  return <TextInput type={type} label={label} {...register()} />;
 }
 
 function LongAnswerInput({ id, type }: IFormInputs) {
@@ -50,7 +43,7 @@ const Contactform = () => {
           <ShortAnswerInput id="1352520723" type="text" />
           <LongAnswerInput id="1419437291" type="text" />
 
-          <Button>Submit</Button>
+          <Button className="mt-2">Submit</Button>
         </form>
       </GoogleFormProvider>
     </Section>
