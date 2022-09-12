@@ -26,21 +26,22 @@ const VerticalFeatures = () => (
     </div>
     <VerticalFeatureRow
       title="Fractional / Part-Time CTO"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature.svg"
+      description="Are you in need of a part-time CTO? Do you have a start-up that is in need of technical leadership but can't afford a full-time CTO? Look no further! I offer part-time CTO services that will provide you with the technical leadership you need at a fraction of the cost."
+      image="/assets/images/charts.svg"
       imageAlt="First feature alt text"
     />
     <VerticalFeatureRow
       title="Full-Stack Development"
-      description="If you're looking for a modern software development agency that understands the unique needs of tech startups, look no further than [agency name]. We specialize in helping startups get off the ground by developing custom software solutions that are both scalable and reliable. Our team of experienced developers will work closely with you to understand your specific needs and create a solution that meets your budget and timeline. Contact us today to learn more about how we can help you launch your tech startup."
-      image="/assets/images/feature2.svg"
+      description="Our full stack development service offers a comprehensive approach to web development 
+      that covers everything from the initial planning stages to the final launch of your site."
+      image="/assets/images/coding.svg"
       imageAlt="Second feature alt text"
       reverse
     />
     <VerticalFeatureRow
       title="Automation"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature3.svg"
+      description="We can automate your business processes to help you focus on your core business goals."
+      image="/assets/images/wireframe.svg"
       imageAlt="Third feature alt text"
     />
   </Section>
