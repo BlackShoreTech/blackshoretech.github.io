@@ -32,8 +32,10 @@ const Contactform = () => {
   const methods = useGoogleForm({ form });
 
   const onSubmit = async (data: any) => {
-    await methods.submitToGoogleForms(data);
-    alert('Form submitted with success!');
+    await methods.submitToGoogleForms(data).then(() => {
+      // eslint-disable-next-line no-alert
+      alert('Form submitted with success!');
+    });
   };
   return (
     <Section>
