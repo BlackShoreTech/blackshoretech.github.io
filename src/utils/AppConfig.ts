@@ -2,7 +2,7 @@ export const AppConfig = {
   site_name: 'BlackShore Technology',
   title: 'BlackShore',
   gtm_id: 'G-X1SCDHVLVS',
-  description: 'Starter code for your Nextjs Boilerplate with Tailwind CSS',
+  description: 'We turn your big ideas into reality',
   locale: 'en',
   technologies: [
     'react',
