@@ -2,11 +2,9 @@ import { Background } from '../background/Background';
 import { Button } from '../components/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
-import NavBar from './NavBar';
 
 const Hero = () => (
   <Background color="bg-gray-900">
-    <NavBar />
     <div className="relative bg-[url('/assets/images/background.svg')] bg-no-repeat bg-cover bg-fixed bg-[position:left_50vh] min-h-screen top-0 left-0 h-2/4">
       <Section yPadding="pt-20 pb-32">
         <HeroOneButton

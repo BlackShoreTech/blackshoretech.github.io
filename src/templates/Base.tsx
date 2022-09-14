@@ -1,17 +1,23 @@
 import Image from 'next/image';
 
+import { Background } from '../background/Background';
 import { Meta } from '../layout/Meta';
 import { Section } from '../layout/Section';
 import { AppConfig } from '../utils/AppConfig';
 import { Banner } from './Banner';
 import { Footer } from './Footer';
 import { Hero } from './Hero';
+import NavBar from './NavBar';
 import { VerticalFeatures } from './VerticalFeatures';
 
 const Base = () => (
   <div className="antialiased text-gray-600">
     <Meta title={AppConfig.title} description={AppConfig.description} />
+    <Background color="bg-gray-900">
+      <NavBar />
+    </Background>
     <Hero />
+
     <Section
       title="What we do"
       description="We specialize in helping startups get off the ground by developing custom software solutions that are both scalable and reliable. We will work closely with you to understand your specific needs and create a solution that meets your budget and timeline. Contact us today to learn more about how we can help you launch your tech startup."

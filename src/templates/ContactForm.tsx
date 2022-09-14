@@ -15,17 +15,18 @@ type IFormInputs = {
   id: string;
   type: 'text' | 'email' | 'tel';
 };
-function ShortAnswerInput({ id, type }: IFormInputs) {
+
+const ShortAnswerInput = ({ id, type }: IFormInputs) => {
   const { register, label } = useShortAnswerInput(id);
 
   return <TextInput type={type} label={label} {...register()} />;
-}
+};
 
-function LongAnswerInput({ id, type }: IFormInputs) {
+const LongAnswerInput = ({ id, type }: IFormInputs) => {
   const { register, label } = useLongAnswerInput(id);
 
   return <TextAreaInput type={type} label={label} {...register()} />;
-}
+};
 
 const Contactform = () => {
   // @ts-ignore
@@ -45,7 +46,9 @@ const Contactform = () => {
           <ShortAnswerInput id="1352520723" type="text" />
           <LongAnswerInput id="1419437291" type="text" />
 
-          <Button className="mt-2">Submit</Button>
+          <Button type="submit" className="mt-2">
+            Submit
+          </Button>
         </form>
       </GoogleFormProvider>
     </Section>

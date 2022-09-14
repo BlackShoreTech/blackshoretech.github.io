@@ -25,8 +25,11 @@ export const Button = React.forwardRef(
       },
       props.className
     );
+
+    // eslint-disable-next-line unused-imports/no-unused-vars
+    const { xl, ...btnProps } = props;
     return (
-      <button ref={ref} {...props} className={btnClass}>
+      <button ref={ref} {...btnProps} className={btnClass}>
         {props.children}
         <style jsx>
           {`
