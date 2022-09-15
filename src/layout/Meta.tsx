@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import { OpenGraphMedia, Twitter } from 'next-seo/lib/types';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
@@ -7,7 +8,9 @@ import { AppConfig } from '../utils/AppConfig';
 type IMetaProps = {
   title: string;
   description: string;
+  images: OpenGraphMedia[];
   canonical?: string;
+  twitter: Twitter;
 };
 
 const Meta = (props: IMetaProps) => {
@@ -57,7 +60,9 @@ const Meta = (props: IMetaProps) => {
           url: props.canonical,
           locale: AppConfig.locale,
           site_name: AppConfig.site_name,
+          images: props.images,
         }}
+        twitter={props.twitter}
       />
     </>
   );

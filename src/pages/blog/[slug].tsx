@@ -26,7 +26,16 @@ export default function PostPage({
 }: PostProps) {
   return (
     <>
-      <Meta title={title} description={excerpt} />
+      <Meta
+        title={title}
+        description={excerpt}
+        images={[{ url: cover_image }]}
+        twitter={{
+          handle: '@brsc2909',
+          site: '@brsc2909',
+          cardType: 'summary_large_image',
+        }}
+      />
       <PostLayout>
         <Section
           title={title}
