@@ -29,7 +29,7 @@ export default function Blog({ posts }: any) {
         <NavBar />
       </Background>
       <Section>
-        <div className="posts grid grid-cols-3 gap-4">
+        <div className="posts grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {posts.map((post: any, key: any) => (
             <Post key={key} {...post} />
           ))}
