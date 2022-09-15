@@ -12,7 +12,16 @@ import { VerticalFeatures } from './VerticalFeatures';
 
 const Base = () => (
   <div className="antialiased text-gray-600">
-    <Meta title={AppConfig.title} description={AppConfig.description} />
+    <Meta
+      title={`Blog - ${AppConfig.title}`}
+      description={AppConfig.description}
+      images={[{ url: '/assets/logo.svg' }]}
+      twitter={{
+        handle: '@brsc2909',
+        site: '@brsc2909',
+        cardType: 'summary_large_image',
+      }}
+    />
     <Background color="bg-gray-900">
       <NavBar />
     </Background>
