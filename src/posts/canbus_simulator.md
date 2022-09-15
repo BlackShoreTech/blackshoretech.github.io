@@ -1,11 +1,12 @@
 ---
 title: Virtual CAN-BUS simulator (Virtual ECU)
-date: May 9, 2022
+date: May 1, 2020
 excerpt: ''
+author: Brendan
 cover_image: 'https://blog.brendanscullion.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Funsplash%2FKVPRz5JEDbc%2Fupload%2Fv1652106957021%2FtZQ5ZUVIo.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75'
 ---
 
-While developing some monitoring applications for a Raspberry-Pi car computer, I found that writing code on my laptop while sitting in the front seat of my car is not the most productive way to do things. What's needed is some sort of virtual ECU, and i have just the solution. 
+While developing some monitoring application for a Raspberry-Pi car computer, I found that writing code on my laptop while sitting in the front seat of my car is not the most productive way to do things. What's needed is some sort of virtual ECU, and i have just the solution. 
 
 #### In short my solution is this:
   1. Take a can recording of the car starting up and running for a little while

@@ -1,7 +1,8 @@
 ---
 title: 'PostgreSQL Fuzzy Text Search: Not so fuzzy to fuzziest'
 date: June 7, 2022
-excerpt: ''
+author: Brendan
+excerpt: 'So you have a bunch of data that comes from some human source (Free text form fields, reviews, blogs, classified ads, social media) and you want to do some analysis on it.'
 cover_image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1654533752867/bDBd4SD-S.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp'
 ---
 So you have a bunch of data that comes from some human source (Free text form fields, reviews, blogs, classified ads, social media) and you want to do some analysis on it. but with people being the way they are, you're going to have some problems:

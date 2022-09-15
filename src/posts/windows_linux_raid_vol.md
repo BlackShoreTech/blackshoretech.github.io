@@ -1,7 +1,8 @@
 ---
 title: 'Mounting Windows Raid Volume on Linux'
-date: May 9, 2022
+date: Jun 9, 2020
 excerpt: ''
+author: Brendan
 cover_image: 'https://blog.brendanscullion.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Funsplash%2FGNyjCePVRs8%2Fupload%2Fv1652106549467%2FmESFQUaRV.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75'
 ---
 #### Estimated time: 5 mins

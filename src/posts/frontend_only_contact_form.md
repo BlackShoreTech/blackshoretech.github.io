@@ -1,7 +1,9 @@
 ---
 title: Frontend-only contact form (React (nextJS)+ Google Forms)
 date: September 13, 2022
-excerpt: ''
+author: Brendan
+excerpt: 'My initial thought was to go super simple and just add a link to a google form but this seemed a bit too clunky for a professional site. 
+The next thought was can I embed the form,'
 cover_image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1663106253339/XoEuZpPvv.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp'
 ---
 I recently created a simple NextJS landing page for my contracting business and decided to host it using GitHub pages, Which is great because it's free and easy to implement. However, it doesn't come with any backend. Keeping with the themes of "free" and "simple" I was looking for some way to add a contact form to the site that doesn't require any backend. 
