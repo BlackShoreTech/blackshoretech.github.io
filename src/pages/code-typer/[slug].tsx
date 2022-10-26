@@ -13,31 +13,34 @@ import NavBar from '../../templates/NavBar';
 
 export default function CodeWriter({ codeSnippet }: any) {
   const [typedInput, setTypedInput] = useState<string>('');
-  const timer = useRef(0);
+
+  const startTime = useRef<number | null>(null);
+  const elapsedTime = useRef<number>(1);
   const mistakes = useRef(0);
+  const inputRef = useRef<HTMLTextAreaElement | null>(null);
 
   const charStyle = {
     correct: 'font-bold bg-green-300/25 text-green-500',
-    incorrect: 'font-bold bg-red-300/25 text-red-500 border-b-2 border-red-500',
-    current: 'bg-gray-400/10 border-b-2 border-slate-700',
+    incorrect:
+      'font-bold bg-red-300/25 text-red-500 border- border-b-2 border-red-500',
+    current:
+      'bg-gray-400/10 border-b-2 border-slate-700 animate-[cursorblink_1s_infinite]',
   };
 
   useEffect(() => {
-    let intervalId: NodeJS.Timer | null = null;
     if (typedInput) {
-      if (!intervalId) {
-        intervalId = setInterval(() => {
-          timer.current += 1;
-        }, 1000);
+      if (!startTime.current) {
+        startTime.current = new Date().getTime();
       }
+      elapsedTime.current =
+        Math.abs(new Date().getTime() - startTime.current) / 1000;
 
       if (typedInput.at(-1) !== codeSnippet.at(typedInput.length - 1)) {
         mistakes.current += 1;
       }
     }
-    return () => {
-      if (intervalId) clearInterval(intervalId);
-    };
+
+    inputRef.current?.focus();
   }, [typedInput, codeSnippet]);
 
   return (
@@ -77,6 +80,7 @@ export default function CodeWriter({ codeSnippet }: any) {
                 </code>
               </pre>
               <textarea
+                ref={inputRef}
                 className="absolute top-1/2 left-0 h-0 w-0"
                 name="typed"
                 id="typed-input"
@@ -87,10 +91,10 @@ export default function CodeWriter({ codeSnippet }: any) {
           </div>
           <div className="flex flex-col w-1/4 max-w-1/4 justify-start space-y-4">
             <div className="border rounded-md  border-black p-4">
-              Time: {timer.current}s
+              Time: {elapsedTime.current}s
             </div>
             <div className="border rounded-md  border-black p-4">
-              CPM: {((typedInput.length / timer.current) * 60).toFixed(2)}
+              CPM: {((typedInput.length / elapsedTime.current) * 60).toFixed(2)}
             </div>
             <div className="border rounded-md  border-black p-4">
               Mistakes: {mistakes.current}

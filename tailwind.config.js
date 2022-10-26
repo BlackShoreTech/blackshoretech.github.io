@@ -60,6 +60,12 @@ module.exports = {
       lineHeight: {
         hero: '4.5rem',
       },
+      keyframes: {
+        cursorblink: {
+          '0%, 100%': { borderStyle: 'solid' },
+          '50%': { borderStyle: 'none' },
+        },
+      },
     },
   },
   variants: {},
