@@ -19,7 +19,7 @@ export default function CodeWriter({ codeSnippet }: any) {
   const charStyle = {
     correct: 'font-bold bg-green-300/25 text-green-500',
     incorrect: 'font-bold bg-red-300/25 text-red-500 border-b-2 border-red-500',
-    current: 'bg-gray-4 00/10 border-b-2 border-slate-900B',
+    current: 'bg-gray-400/10 border-b-2 border-slate-700',
   };
 
   useEffect(() => {
