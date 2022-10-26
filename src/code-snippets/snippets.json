@@ -2,13 +2,40 @@
   "strings": [
     {
       "name": "capitalize",
+      "description": "",
       "url": "https://raw.githubusercontent.com/TheAlgorithms/Python/master/strings/capitalize.py"
     },
     {
       "name": "ngram",
+      "description": "",
       "url": "https://raw.githubusercontent.com/TheAlgorithms/Python/master/strings/ngram.py"
     }
   ],
-  "financial": [{ "name": "interest" }],
-  "maths": [{ "name": "abs" }]
+  "financial": [{ "name": "interest", "description": "" }],
+  "maths": [
+    { "name": "abs", "description": "Find the absolute value of a number." },
+    {
+      "name": "area",
+      "description": "Find the area of various geometric shapes."
+    }
+  ],
+  "sorts": [
+    {
+      "name": "bead_sort",
+      "description": "Bead sort only works for sequences of non-negative integers"
+    },
+    {
+      "name": "bitonic_sort",
+      "description": ""
+    },
+    {
+      "name": "bubble_sort",
+      "description": "Pure implementation of bubble sort algorithm in Python"
+    },
+    {
+      "name": "bucket_sort",
+      "description": "Bucket sort, or bin sort, is a sorting algorithm that works by distributing the elements of an array into a number of buckets"
+    }
+  ],
+  "compression": [{ "name": "huffman", "description": "" }]
 }
