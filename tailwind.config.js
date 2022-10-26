@@ -4,7 +4,16 @@ module.exports = {
     fontFamily: {
       sans: ['Siara medium', 'ui-sans-serif', 'system-ui'],
       serif: ['ui-serif', 'Georgia'],
-      mono: ['ui-monospace', 'SFMono-Regular'],
+      mono: [
+        'ui-monospace',
+        'SFMono-Regular',
+        'Menlo',
+        'Monaco',
+        'Consolas',
+        'Liberation Mono',
+        'Courier New',
+        'monospace',
+      ],
       display: ['Oswald'],
       body: ['"Open Sans"'],
     },
