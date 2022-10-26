@@ -17,8 +17,9 @@ export default function CodeWriter({ codeSnippet }: any) {
   const mistakes = useRef(0);
 
   const charStyle = {
-    correct: 'font-bold bg-green-100/10 text-green-500',
-    incorrect: 'font-bold bg-green-100/10 text-red-500',
+    correct: 'font-bold bg-green-300/25 text-green-500',
+    incorrect: 'font-bold bg-red-300/25 text-red-500 border-b-2 border-red-500',
+    current: 'bg-gray-4 00/10 border-b-2 border-slate-900B',
   };
 
   useEffect(() => {
@@ -46,11 +47,13 @@ export default function CodeWriter({ codeSnippet }: any) {
         <NavBar />
       </Background>
       <Section>
-        <Link href="/code-typer">{'< Back'}</Link>
+        <Link href="/code-typer" passHref>
+          <div className="py-4 cursor-pointer font-bold">{'< Back'}</div>
+        </Link>
         <div className="flex space-x-2">
           <div className="static w-full min-w-3/4">
             <label htmlFor="typed-input">
-              <pre className="font-mono rounded bg-slate-900 p-8 text-slate-100">
+              <pre className="font-mono rounded cursor-text bg-slate-100 p-8 text-slate-900 border-4 active:border-blue-500">
                 <code>
                   {codeSnippet.split('').map((c: string, k: number) => {
                     return (
@@ -62,6 +65,8 @@ export default function CodeWriter({ codeSnippet }: any) {
                             ? c === typedInput[k]
                               ? charStyle.correct
                               : charStyle.incorrect
+                            : k === typedInput.length
+                            ? charStyle.current
                             : ''
                         }
                       >
