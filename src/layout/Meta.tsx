@@ -7,10 +7,10 @@ import { AppConfig } from '../utils/AppConfig';
 
 type IMetaProps = {
   title: string;
-  description: string;
-  images: OpenGraphMedia[];
+  description?: string;
+  images?: OpenGraphMedia[];
   canonical?: string;
-  twitter: Twitter;
+  twitter?: Twitter;
 };
 
 const Meta = (props: IMetaProps) => {

@@ -10,7 +10,6 @@ import { Meta } from '../../layout/Meta';
 import { Section } from '../../layout/Section';
 import { Footer } from '../../templates/Footer';
 import NavBar from '../../templates/NavBar';
-import { AppConfig } from '../../utils/AppConfig';
 
 export default function CodeWriter({ codeSnippet }: any) {
   const [typedInput, setTypedInput] = useState<string>('');
@@ -42,10 +41,7 @@ export default function CodeWriter({ codeSnippet }: any) {
 
   return (
     <div className="antialiased text-gray-900">
-      <Meta
-        title={`Blog - ${AppConfig.title}`}
-        description={AppConfig.description}
-      />
+      <Meta title="Code Typer" />
       <Background color="bg-gray-900">
         <NavBar />
       </Background>

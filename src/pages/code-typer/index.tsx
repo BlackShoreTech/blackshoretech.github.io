@@ -18,7 +18,7 @@ export default function CodeWriter({ SnippitsList }: any) {
   return (
     <div className="antialiased text-gray-900">
       <Meta
-        title={`Blog - ${AppConfig.title}`}
+        title={`Code Typer - ${AppConfig.title}`}
         description={AppConfig.description}
       />
       <Background color="bg-gray-900">
