@@ -19,7 +19,7 @@ const About = () => (
     <Background color="bg-gray-900">
       <NavBar />
     </Background>
-    About
+    <div className="min-h-full h-80">Work in progress</div>
     <Footer />
   </div>
 );
