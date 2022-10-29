@@ -35,7 +35,7 @@ export default function CodeWriter({ SnippitsList }: any) {
             <h2 className="pb-4">Choose a Catagory</h2>
             <ul
               onChange={(e: any) => setCatFilter(e.target.value)}
-              className="grid grid-cols-2 gap-4 col-span-1"
+              className="grid grid-cols-1 md:grid-cols-2 gap-4 col-span-1"
             >
               {Object.keys(SnippitsList).map(
                 (catagory: string, key: number) => (
@@ -62,7 +62,7 @@ export default function CodeWriter({ SnippitsList }: any) {
           </div>
           <div className="col-span-2 px-4 min-h-1/2">
             <h2 className="pb-4">Choose an Algorithym</h2>
-            <ul className="grid grid-cols-2 gap-4">
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {SnippitsList[catFilter].map(
                 (
                   { name, description }: { name: string; description: string },
