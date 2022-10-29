@@ -8,9 +8,7 @@ const NavBar = () => (
   <Section yPadding="py-3">
     <NavbarTwoColumns logo={<Logo />}>
       <li>
-        <Link href="/about">
-          <a>About us</a>
-        </Link>
+        <Link href="/about">About us</Link>
       </li>
       <li>
         <a
@@ -25,9 +23,7 @@ const NavBar = () => (
         </a>
       </li>
       <li>
-        <Link href="/blog">
-          <a>Blog</a>
-        </Link>
+        <Link href="/blog">Blog</Link>
       </li>
     </NavbarTwoColumns>
   </Section>
