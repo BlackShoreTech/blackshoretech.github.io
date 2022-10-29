@@ -19,6 +19,34 @@
       "description": "Find the area of various geometric shapes."
     }
   ],
+  "matrix": [
+    {
+      "name": "binary_search_matrix",
+      "description": "pure Python implementation of binary search algorithms"
+    },
+    {
+      "name": "rotate_matrix",
+      "description": "In this problem, we want to rotate the matrix elements by 90, 180, 270"
+    },
+    {
+      "name": "count_islands_in_matrix",
+      "description": "An island in matrix is a group of linked areas, all having the same value."
+    }
+  ],
+  "searches": [
+    {
+      "name": "binary_search",
+      "description": "pure Python implementation of binary search algorithms"
+    },
+    {
+      "name": "binary_tree_traversal",
+      "description": "pure Python implementation of tree traversal algorithms"
+    },
+    {
+      "name": "fibonacci_search",
+      "description": "pure Python implementation of fibonacci search"
+    }
+  ],
   "sorts": [
     {
       "name": "bead_sort",
