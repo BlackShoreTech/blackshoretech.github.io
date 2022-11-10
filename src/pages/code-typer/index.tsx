@@ -5,11 +5,8 @@ import { useState } from 'react';
 
 import Link from 'next/link';
 
-import { Background } from '../../background/Background';
-import { Meta } from '../../layout/Meta';
-import { Section } from '../../layout/Section';
-import { Footer } from '../../templates/Footer';
-import NavBar from '../../templates/NavBar';
+import { Section } from '../../components/Section';
+import { Meta } from '../../layouts/Meta';
 import { AppConfig } from '../../utils/AppConfig';
 
 export default function CodeWriter({ SnippitsList }: any) {
@@ -21,10 +18,6 @@ export default function CodeWriter({ SnippitsList }: any) {
         title={`Code Typer - ${AppConfig.title}`}
         description={AppConfig.description}
       />
-      <Background color="bg-gray-900">
-        <NavBar />
-      </Background>
-
       <Section className="min-h-screen bg-gradient-to-r ">
         <div className="text-center mb-4">
           <h2 className="text-2xl">Code Typer</h2>
@@ -87,7 +80,6 @@ export default function CodeWriter({ SnippitsList }: any) {
           </div>
         </div>
       </Section>
-      <Footer />
     </div>
   );
 }

@@ -1,10 +1,18 @@
+import { ReactNode } from 'react';
+
 import { AppProps } from 'next/app';
 import Script from 'next/script';
 
 import '../styles/global.css';
 import { AppConfig } from '../utils/AppConfig';
 
-const MyApp = ({ Component, pageProps }: AppProps) => (
+type ComponentWithPageLayout = AppProps & {
+  Component: AppProps['Component'] & {
+    PageLayout?: React.FC<{ children: ReactNode }>;
+  };
+};
+
+const MyApp = ({ Component, pageProps }: ComponentWithPageLayout) => (
   <>
     <Script id="google-tag-manager" strategy="afterInteractive">
       {`
@@ -15,7 +23,13 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
         })(window,document,'script','dataLayer','${AppConfig.gtm_id}');
       `}
     </Script>
-    <Component {...pageProps} />
+    {Component.PageLayout ? (
+      <Component.PageLayout>
+        <Component {...pageProps} />
+      </Component.PageLayout>
+    ) : (
+      <Component {...pageProps} />
+    )}
   </>
 );
 

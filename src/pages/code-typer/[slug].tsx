@@ -6,10 +6,10 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 
 import { Background } from '../../background/Background';
-import { Meta } from '../../layout/Meta';
-import { Section } from '../../layout/Section';
-import { Footer } from '../../templates/Footer';
-import NavBar from '../../templates/NavBar';
+import { Footer } from '../../components/footer/Footer';
+import NavBar from '../../components/NavBar/NavBar';
+import { Section } from '../../components/Section';
+import { Meta } from '../../layouts/Meta';
 
 export default function CodeWriter({ codeSnippet }: any) {
   const [typedInput, setTypedInput] = useState<string>('');

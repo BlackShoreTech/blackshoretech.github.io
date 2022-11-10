@@ -4,11 +4,11 @@ import path from 'path';
 import matter from 'gray-matter';
 
 import { Background } from '../../background/Background';
+import { Footer } from '../../components/footer/Footer';
+import NavBar from '../../components/NavBar/NavBar';
 import Post from '../../components/Post';
-import { Meta } from '../../layout/Meta';
-import { Section } from '../../layout/Section';
-import { Footer } from '../../templates/Footer';
-import NavBar from '../../templates/NavBar';
+import { Section } from '../../components/Section';
+import { Meta } from '../../layouts/Meta';
 import { AppConfig } from '../../utils/AppConfig';
 
 export default function Blog({ posts }: any) {

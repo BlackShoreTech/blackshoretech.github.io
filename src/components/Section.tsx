@@ -8,7 +8,7 @@ type ISectionProps = {
 } & DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 
 const Section = (props: ISectionProps) => (
-  <div
+  <section
     className={`max-w-screen-lg mx-auto px-3 ${
       props.yPadding ? props.yPadding : 'py-8'
     } ${props.className}`}
@@ -25,7 +25,7 @@ const Section = (props: ISectionProps) => (
     )}
 
     {props.children}
-  </div>
+  </section>
 );
 
 export { Section };

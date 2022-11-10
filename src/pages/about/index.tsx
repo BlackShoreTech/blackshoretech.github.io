@@ -1,11 +1,10 @@
-import { Background } from '../../background/Background';
-import { Meta } from '../../layout/Meta';
-import { Footer } from '../../templates/Footer';
-import NavBar from '../../templates/NavBar';
+import { Section } from '../../components/Section';
+import DefaultLayout from '../../layouts/DefaultLayout';
+import { Meta } from '../../layouts/Meta';
 import { AppConfig } from '../../utils/AppConfig';
 
 const About = () => (
-  <div className="antialiased text-gray-900">
+  <>
     <Meta
       title={`About - ${AppConfig.title}`}
       description={AppConfig.description}
@@ -16,12 +15,8 @@ const About = () => (
         cardType: 'summary_large_image',
       }}
     />
-    <Background color="bg-gray-900">
-      <NavBar />
-    </Background>
-    <div className="min-h-full h-80">Work in progress</div>
-    <Footer />
-  </div>
+    <Section>Nothing to see here... Yet</Section>
+  </>
 );
-
+About.PageLayout = DefaultLayout;
 export default About;

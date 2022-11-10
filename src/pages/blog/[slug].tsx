@@ -6,9 +6,9 @@ import React from 'react';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 
-import { Meta } from '../../layout/Meta';
-import { PostLayout } from '../../layout/PostLayout';
-import { Section } from '../../layout/Section';
+import { Section } from '../../components/Section';
+import { Meta } from '../../layouts/Meta';
+import { PostLayout } from '../../layouts/PostLayout';
 
 type PostProps = {
   frontmatter: {
@@ -36,22 +36,21 @@ export default function PostPage({
           cardType: 'summary_large_image',
         }}
       />
-      <PostLayout>
-        <Section
-          title={title}
-          description={excerpt}
-          className="prose prose-slate"
-        >
-          <article>
-            <img src={cover_image} alt={title} />
-            <div>{date}</div>
-            <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-          </article>
-        </Section>
-      </PostLayout>
+      <Section
+        title={title}
+        description={excerpt}
+        className="prose prose-slate"
+      >
+        <article>
+          <img src={cover_image} alt={title} />
+          <div>{date}</div>
+          <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+        </article>
+      </Section>
     </>
   );
 }
+PostPage.PageLayout = PostLayout;
 
 export async function getStaticPaths() {
   const files = fs.readdirSync(path.join('src/posts'));

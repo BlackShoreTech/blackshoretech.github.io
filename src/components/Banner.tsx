@@ -1,6 +1,6 @@
 import { CTABanner } from '../cta/CTABanner';
-import { Section } from '../layout/Section';
 import { Contactform } from './ContactForm';
+import { Section } from './Section';
 
 const Banner = () => (
   <Section>

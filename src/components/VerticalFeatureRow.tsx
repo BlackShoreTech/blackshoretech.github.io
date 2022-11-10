@@ -26,7 +26,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   const router = useRouter();
 
   return (
-    <div className={verticalFeatureClass}>
+    <article className={verticalFeatureClass}>
       <div className="w-full sm:w-1/2 text-center sm:px-6">
         <h3 className="text-3xl text-gray-300 font-semibold">{props.title}</h3>
         <div className="mt-6 text-xl leading-9 text-gray-500">
@@ -37,7 +37,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
       <div className="w-full sm:w-1/2 p-6">
         <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
       </div>
-    </div>
+    </article>
   );
 };
 

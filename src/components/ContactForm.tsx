@@ -5,11 +5,11 @@ import {
   GoogleFormProvider,
 } from 'react-google-forms-hooks';
 
-import { Button } from '../components/Button';
-import { TextAreaInput } from '../components/TextAreaInput';
-import { TextInput } from '../components/TextInput';
-import { Section } from '../layout/Section';
 import form from '../utils/GoogleForm.json';
+import { Button } from './Button';
+import { Section } from './Section';
+import { TextAreaInput } from './TextAreaInput';
+import { TextInput } from './TextInput';
 
 type IFormInputs = {
   id: string;
