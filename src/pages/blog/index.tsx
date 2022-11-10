@@ -3,15 +3,14 @@ import path from 'path';
 
 import matter from 'gray-matter';
 
-import { Background } from '../../background/Background';
 import { Footer } from '../../components/footer/Footer';
-import NavBar from '../../components/NavBar/NavBar';
 import Post from '../../components/Post';
 import { Section } from '../../components/Section';
+import DefaultLayout from '../../layouts/DefaultLayout';
 import { Meta } from '../../layouts/Meta';
 import { AppConfig } from '../../utils/AppConfig';
 
-export default function Blog({ posts }: any) {
+function Blog({ posts }: any) {
   return (
     <div className="antialiased text-gray-900">
       <Meta
@@ -24,10 +23,6 @@ export default function Blog({ posts }: any) {
           cardType: 'summary_large_image',
         }}
       />
-
-      <Background color="bg-gray-900">
-        <NavBar />
-      </Background>
       <Section>
         <div className="posts grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {posts.map((post: any, key: any) => (
@@ -39,6 +34,10 @@ export default function Blog({ posts }: any) {
     </div>
   );
 }
+
+Blog.PageLayout = DefaultLayout;
+
+export default Blog;
 
 export async function getStaticProps() {
   const files = fs.readdirSync(path.join('src/posts'));

@@ -9,7 +9,7 @@ type Props = {
 
 const PostLayout = ({ children }: Props) => (
   <div className="flex flex-col min-h-screen antialiased text-gray-600">
-    <header>
+    <header className="h-14 bg-gray-900">
       <NavBar />
     </header>
     <main className="grow">{children}</main>

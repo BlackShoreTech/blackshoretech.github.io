@@ -15,7 +15,7 @@ const About = () => (
         cardType: 'summary_large_image',
       }}
     />
-    <Section>Nothing to see here... Yet</Section>
+    <Section className="mt-10">Nothing to see here... Yet</Section>
   </>
 );
 About.PageLayout = DefaultLayout;

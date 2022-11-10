@@ -10,7 +10,7 @@ interface IProps {
 export function Layout({ children }: IProps) {
   return (
     <div className="flex flex-col min-h-screen antialiased text-gray-600">
-      <header className="">
+      <header className="h-14 bg-gray-900">
         <NavBar />
       </header>
       <main className="grow">{children}</main>
