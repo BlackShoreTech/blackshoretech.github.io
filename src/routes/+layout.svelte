@@ -51,7 +51,10 @@
 					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 						<!-- Company Info -->
 						<div>
-							<h3 class="text-xl text-zinc-100 font-ibm mb-4">BLACKSHORE TECHNOLOGY</h3>
+							<div class="flex items-center gap-4 mb-4">
+								<img src="/favicon.svg" alt="Blackshore Technology Logo" class="w-12 h-12" />
+								<h3 class="text-xl text-zinc-100 font-ibm">BLACKSHORE TECHNOLOGY</h3>
+							</div>
 							<p class="text-zinc-400 text-sm">
 								Advanced software engineering and technical strategy solutions for forward-thinking businesses.
 							</p>
