@@ -101,6 +101,7 @@
 <svelte:window on:keydown={handleKeydown}/>
 
 <svelte:head>
+  <title>Blackshore</title>
   <link href="https://fonts.cdnfonts.com/css/ocra" rel="stylesheet">
 </svelte:head>
 

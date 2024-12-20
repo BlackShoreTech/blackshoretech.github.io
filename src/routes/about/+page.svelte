@@ -1,7 +1,4 @@
 <script>
-  import { onMount } from 'svelte';
-
-  import Scene from '../../lib/Background/Scene.svelte'
 
   const values = [
     {
@@ -51,6 +48,7 @@
 </script>
 
 <svelte:head>
+  <title>About Blackshore</title>
   <link href="https://fonts.cdnfonts.com/css/ocra" rel="stylesheet">
 </svelte:head>
 
@@ -87,7 +85,7 @@
       </div>
     </section>
 
-    <!-- Timeline Section -->
+    <!-- Timeline Section
     <section class="max-w-4xl mx-auto mt-16">
       <h3 class="text-3xl font-ibm font-semibold mb-8 bg-blue-600/80 p-4 inline-block neon-border">
         Our Journey
@@ -103,7 +101,7 @@
           </div>
         {/each}
       </div>
-    </section>
+    </section> -->
 
     <!-- Contact Section -->
     <section class="max-w-3xl mx-auto mt-16 text-center">
