@@ -2,7 +2,8 @@
 title: How Local LLM Solutions Can Help Your Business
 description: Learn how local LLM solutions can help your business.
 date: '2024-12-20'
-author: Blackshore Team
+author: Brendan Scullion
+keywords: "local llm, llm solutions, business growth, data privacy, security"
 published: true
 ---
 

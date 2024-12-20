@@ -11,6 +11,13 @@
   const posts: BlogPost[] = data.posts;
 </script>
 
+<svelte:head>
+  <title>Blackshore Blog</title>
+  <meta name="description" content="Blackshore Blog" />
+  <meta name="keywords" content="Blackshore, Blog, Technology, Innovation, Insights" />
+  <meta name="author" content="Brendan Scullion" />
+</svelte:head>
+
 <div class="container mx-auto px-4 py-16">
   <h1 class="text-4xl font-bold text-zinc-100 mb-8 font-ibm">Blog</h1>
   

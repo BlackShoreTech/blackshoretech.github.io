@@ -3,6 +3,15 @@
   const { content: Post, metadata } = data;
 </script>
 
+<svelte:head>
+  <title>Blackshore Blog - {metadata.title}</title>
+  <meta name="description" content={metadata.description} />
+  <meta name="keywords" content={metadata.keywords} />
+  <meta name="author" content={metadata.author} />
+  <meta name="date" content={metadata.date} />
+  <meta name="robots" content="index, follow" />
+</svelte:head>
+
 <div class="container mx-auto px-4 py-16 max-w-3xl">
   <article class="prose prose-invert prose-blue">
     <header class="mb-8 not-prose">

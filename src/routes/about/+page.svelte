@@ -50,6 +50,9 @@
 <svelte:head>
   <title>About Blackshore</title>
   <link href="https://fonts.cdnfonts.com/css/ocra" rel="stylesheet">
+  <meta name="description" content="Blackshore is a Dublin-based consultancy specializing in artificial intelligence, systems architecture, and technical leadership." />
+  <meta name="keywords" content="Blackshore, Technology, Innovation, Dublin, AI, Software, Engineering, Strategy" />
+  <meta name="robots" content="index, follow" />
 </svelte:head>
 
 

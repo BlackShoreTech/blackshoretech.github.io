@@ -2,7 +2,8 @@
 title: "Fractional CTO Services: A Smart Solution for Growing Businesses"
 date: "2024-02-14"
 description: "Discover how fractional CTO services can provide strategic technical leadership while optimizing costs for your growing business."
-author: Blackshore Team
+author: Brendan Scullion
+keywords: "fractional cto, cto services, tech leadership, cost-effective solutions, business growth"
 published: true
 ---
 
