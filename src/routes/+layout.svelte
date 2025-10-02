@@ -3,7 +3,7 @@
 	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
 	import { page } from '$app/state';
 	import '../app.css';
-	import Scene from '$lib/Background/Scene.svelte'
+	import Scene from '$lib/Background/Scene.svelte';
 	let { children } = $props();
 
 	const currentYear = new Date().getFullYear();
@@ -16,28 +16,33 @@
 	</div>
 	<div class="content-container">
 		<ParaglideJS {i18n}>
-			<nav class="bg-zinc-900/80 backdrop-blur-sm border-b border-blue-500/30 sticky top-0 z-40">
-				<div class="container mx-auto flex justify-between items-center">
-					<h1 class="text-2xl text-zinc-100 tracking-widest py-4">
-						BLACKSHORE
-						<span class="text-blue-400/70 text-sm tracking-wider block mt-1">TECHNICAL SOLUTIONS</span>
-					</h1>
-					<div class="flex gap-6">
-						<a 
-							href="/" 
-							class="text-zinc-100 hover:text-blue-400 transition-colors font-ibm text-lg {path === '/' ? 'border-b-2 border-blue-400' : ''}"
+			<nav class="sticky top-0 z-40 border-b border-zinc-800 bg-black/90 backdrop-blur-sm">
+				<div class="container mx-auto flex items-center justify-between px-8 py-6">
+					<h1 class="silver-text font-serif text-xl tracking-tight">Blackshore Technology</h1>
+					<div class="flex gap-8">
+						<a
+							href="/"
+							class="font-serif text-zinc-400 transition-colors hover:text-zinc-300 {path === '/'
+								? 'border-b border-zinc-700 text-zinc-300'
+								: ''}"
 						>
 							Home
 						</a>
-						<a 
-							href="/about" 
-							class="text-zinc-100 hover:text-blue-400 transition-colors font-ibm text-lg {path === '/about' ? 'border-b-2 border-blue-400' : ''}"
+						<a
+							href="/about"
+							class="font-serif text-zinc-400 transition-colors hover:text-zinc-300 {path ===
+							'/about'
+								? 'border-b border-zinc-700 text-zinc-300'
+								: ''}"
 						>
 							About
 						</a>
-						<a 
-							href="/blog" 
-							class="text-zinc-100 hover:text-blue-400 transition-colors font-ibm text-lg {path === '/blog' ? 'border-b-2 border-blue-400' : ''}"
+						<a
+							href="/blog"
+							class="font-serif text-zinc-400 transition-colors hover:text-zinc-300 {path ===
+							'/blog'
+								? 'border-b border-zinc-700 text-zinc-300'
+								: ''}"
 						>
 							Blog
 						</a>
@@ -46,64 +51,32 @@
 			</nav>
 			{@render children()}
 
-			<footer class="bg-zinc-900/80 backdrop-blur-sm border-t border-blue-500/30 mt-auto relative z-10">
-				<div class="container mx-auto py-12 px-4">
-					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-						<!-- Company Info -->
-						<div>
-							<div class="flex items-center gap-4 mb-4">
-								<img src="/favicon.svg" alt="Blackshore Technology Logo" class="w-12 h-12" />
-								<h3 class="text-xl text-zinc-100 font-ibm">BLACKSHORE TECHNOLOGY</h3>
-							</div>
-							<p class="text-zinc-400 text-sm">
-								Advanced software engineering and technical strategy solutions for forward-thinking businesses.
-							</p>
-						</div>
-
-						<!-- Quick Links -->
-						<div>
-							<h3 class="text-xl text-zinc-100 font-ibm mb-4">Quick Links</h3>
-							<nav class="flex flex-col space-y-2">
-								<a href="/" class="text-zinc-400 hover:text-blue-400 transition-colors">Home</a>
-								<a href="/about" class="text-zinc-400 hover:text-blue-400 transition-colors">About</a>
-								<a href="/blog" class="text-zinc-400 hover:text-blue-400 transition-colors">Blog</a>
-							</nav>
-						</div>
-
-						<!-- Contact -->
-						<div>
-							<h3 class="text-xl text-zinc-100 font-ibm mb-4">Contact</h3>
-							<div class="space-y-2">
-								<a 
-									href="mailto:contact@blackshoretech.com" 
-									class="text-zinc-400 hover:text-blue-400 transition-colors block"
-								>
-									contact@blackshoretech.com
-								</a>
-								<p class="text-zinc-400">Dublin, Ireland</p>
-							</div>
-						</div>
-					</div>
-
-					<!-- Bottom Bar -->
-					<div class="border-t border-blue-500/30 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-						<p class="text-zinc-400 text-sm">
-							© {currentYear} Blackshore Technology. All rights reserved.
+			<footer class="relative z-10 mt-auto border-t border-zinc-800 bg-black/90 backdrop-blur-sm">
+				<div class="container mx-auto px-8 py-8">
+					<div class="flex flex-col items-center justify-between md:flex-row">
+						<p class="font-serif text-sm text-zinc-600">
+							© {currentYear} Blackshore Technology Limited. All rights reserved.
 						</p>
-						<div class="flex space-x-6 mt-4 md:mt-0">
-							<a 
-								href="https://github.com/blackshoretech" 
-								target="_blank" 
+						<div class="mt-4 flex gap-6 md:mt-0">
+							<a
+								href="mailto:contact@blackshoretech.com"
+								class="font-serif text-sm text-zinc-600 transition-colors hover:text-zinc-400"
+							>
+								Contact
+							</a>
+							<a
+								href="https://github.com/blackshoretech"
+								target="_blank"
 								rel="noopener noreferrer"
-								class="text-zinc-400 hover:text-blue-400 transition-colors"
+								class="font-serif text-sm text-zinc-600 transition-colors hover:text-zinc-400"
 							>
 								GitHub
 							</a>
-							<a 
-								href="https://linkedin.com/company/blackshore-technology" 
-								target="_blank" 
+							<a
+								href="https://linkedin.com/company/blackshore-technology"
+								target="_blank"
 								rel="noopener noreferrer"
-								class="text-zinc-400 hover:text-blue-400 transition-colors"
+								class="font-serif text-sm text-zinc-600 transition-colors hover:text-zinc-400"
 							>
 								LinkedIn
 							</a>
@@ -119,7 +92,7 @@
 	.grid-container {
 		position: relative;
 		min-height: 100vh;
-		background-color: theme('colors.zinc.900');
+		background-color: #000000;
 	}
 
 	:global(main) {
@@ -148,7 +121,7 @@
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
-		background-color: theme('colors.zinc.900');
+		background-color: theme('colors.black');
 	}
 
 	:global(#svelte) {

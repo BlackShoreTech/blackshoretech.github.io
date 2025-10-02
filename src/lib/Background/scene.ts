@@ -3,7 +3,7 @@ import vertex from './vertex.glsl?raw'
 import fragment from './fragment.glsl?raw'
 
 export class Scene {
-    constructor(options) {
+    constructor(options: { el: HTMLElement }) {
         this.$el = options.el;
         this.time = 0;
 
