@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { stopPropagation } from 'svelte/legacy';
+
   
   interface Service {
     title: string;
@@ -75,8 +77,8 @@
     }
   ];
 
-  let selectedService: Service | null = null;
-  let modalOpen = false;
+  let selectedService: Service | null = $state(null);
+  let modalOpen = $state(false);
 
   function openModal(service: Service) {
     selectedService = service;
@@ -98,7 +100,7 @@
 
 </script>
 
-<svelte:window on:keydown={handleKeydown}/>
+<svelte:window onkeydown={handleKeydown}/>
 
 <svelte:head>
   <title>Blackshore</title>
@@ -130,8 +132,8 @@
             class="service-card border-2 border-zinc-900 p-8 hover:bg-zinc-900 hover:text-zinc-50 transition-colors cursor-pointer hover:shadow-industrial bg-zinc-50"
             role="button"
             tabindex="0"
-            on:click={() => openModal(service)}
-            on:keydown={(e) => e.key === 'Enter' && openModal(service)}
+            onclick={() => openModal(service)}
+            onkeydown={(e) => e.key === 'Enter' && openModal(service)}
           >
             <h4 class="text-2xl font-ibm font-semibold mb-3">{service.title}</h4>
             <p class="font-ibm">
@@ -165,11 +167,11 @@
   <!-- svelte-ignore a11y_no_static_element_interactions -->
   <div 
   class="fixed inset-0 bg-zinc-900 bg-opacity-95 z-50 flex items-center justify-center p-4"
-  on:click={closeModal}
+  onclick={closeModal}
   >
     <div 
       class="bg-zinc-50 border-2 border-zinc-900 max-w-2xl w-full max-h-[90vh] overflow-y-auto"
-      on:click|stopPropagation={() => {}}
+      onclick={stopPropagation(() => {})}
     >
       <div class="p-8">
         <div class="flex justify-between items-start mb-4">
@@ -177,7 +179,7 @@
           <!-- svelte-ignore a11y_consider_explicit_label -->
           <button 
             class="text-zinc-900 border-2 border-zinc-900 p-2 hover:bg-zinc-900 hover:text-zinc-50"
-            on:click={closeModal}
+            onclick={closeModal}
           >
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" />

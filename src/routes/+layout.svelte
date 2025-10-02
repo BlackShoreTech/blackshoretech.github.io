@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { i18n } from '$lib/i18n';
 	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import '../app.css';
 	import Scene from '$lib/Background/Scene.svelte'
 	let { children } = $props();
 
 	const currentYear = new Date().getFullYear();
-	const path = $derived($page.url.pathname);
+	const path = $derived(page.url.pathname);
 </script>
 
 <div class="grid-container">

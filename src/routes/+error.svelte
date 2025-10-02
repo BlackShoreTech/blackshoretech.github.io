@@ -1,5 +1,5 @@
 <script>
-    import { page } from '$app/stores';
+    import { page } from '$app/state';
 </script>
 
 <svelte:head>
@@ -10,8 +10,8 @@
     <div class="container mx-auto px-4 py-16">
         <div class="max-w-4xl mx-auto text-center">
             <div class="neon-border p-8 bg-zinc-900/80 backdrop-blur-sm">
-                <h1 class="text-8xl mb-4 text-blue-400 font-bold">{$page.status}</h1>
-                <p class="text-xl mb-8 text-zinc-300">{$page.error?.message || 'An unexpected error occurred'}</p>
+                <h1 class="text-8xl mb-4 text-blue-400 font-bold">{page.status}</h1>
+                <p class="text-xl mb-8 text-zinc-300">{page.error?.message || 'An unexpected error occurred'}</p>
                 <a href="/" class="inline-block bg-zinc-900 text-zinc-50 px-8 py-3 font-ibm font-semibold text-xl border border-blue-500/50 hover:border-blue-400 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all">
                     Return Home
                 </a>
