@@ -5,7 +5,7 @@
 	<title>About — Blackshore Technology Limited</title>
 	<meta
 		name="description"
-		content="Blackshore Technology is a boutique software development agency in Dublin, Ireland specializing in AI alignment, application development, and special projects requiring the highest levels of technical sophistication."
+		content="Blackshore Technology is a boutique software development agency in Dublin, Ireland specializing in AI alignment, AI-powered applications, and complex technical projects."
 	/>
 	<meta
 		name="keywords"
@@ -20,7 +20,7 @@
 	<meta property="og:title" content="About — Blackshore Technology Limited" />
 	<meta
 		property="og:description"
-		content="Boutique software development agency in Dublin specializing in AI alignment and special projects."
+		content="Boutique software development agency in Dublin specializing in AI alignment and AI-powered applications."
 	/>
 	<meta property="og:image" content="https://www.blackshoretech.com/logo.png" />
 
@@ -30,7 +30,7 @@
 	<meta name="twitter:title" content="About — Blackshore Technology Limited" />
 	<meta
 		name="twitter:description"
-		content="Boutique software development agency in Dublin specializing in AI alignment and special projects."
+		content="Boutique software development agency in Dublin specializing in AI alignment and AI-powered applications."
 	/>
 	<meta name="twitter:image" content="https://www.blackshoretech.com/logo.png" />
 </svelte:head>
@@ -46,16 +46,17 @@
 				</p>
 
 				<p>
-					We specialize in solving problems others cannot. When conventional solutions fall short
-					and the stakes are high, we deliver excellence.
+					We build AI-powered applications with a focus on reliability, safety, and long-term
+					maintainability. Our team brings deep expertise in machine learning systems and modern
+					software architecture.
 				</p>
 
 				<p>
-					Our expertise spans AI alignment, application development, and special projects requiring
-					the highest levels of technical sophistication and discretion.
+					Our work spans AI alignment research, custom application development, and complex
+					technical projects that demand rigorous engineering standards.
 				</p>
 
-				<p>We work with organizations that understand the value of doing things right.</p>
+				<p>We partner with organizations committed to building technology responsibly.</p>
 			</div>
 
 			<div class="mt-16">

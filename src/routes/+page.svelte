@@ -4,7 +4,7 @@
 		'@type': 'Organization',
 		name: 'Blackshore Technology Limited',
 		description:
-			'Elite software engineering for impossible problems. AI alignment, application development, and special projects.',
+			'Boutique software agency specializing in AI systems, alignment research, and production applications.',
 		url: 'https://www.blackshoretech.com',
 		logo: 'https://www.blackshoretech.com/logo.png',
 		address: {
@@ -25,10 +25,10 @@
 </script>
 
 <svelte:head>
-	<title>Blackshore Technology Limited — Elite Software Engineering</title>
+	<title>Blackshore Technology Limited — AI Systems & Software Engineering</title>
 	<meta
 		name="description"
-		content="Elite software engineering for impossible problems. We specialize in AI alignment, application development, and special projects for organizations that demand excellence. Based in Dublin, Ireland."
+		content="Boutique software agency specializing in AI systems, alignment research, and production applications. Deep expertise in machine learning, safety, and scalable architecture. Dublin, Ireland."
 	/>
 	<meta
 		name="keywords"
@@ -40,10 +40,10 @@
 	<!-- Open Graph -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.blackshoretech.com/" />
-	<meta property="og:title" content="Blackshore Technology Limited — Elite Software Engineering" />
+	<meta property="og:title" content="Blackshore Technology Limited — AI Systems & Software Engineering" />
 	<meta
 		property="og:description"
-		content="Elite software engineering for impossible problems. AI alignment, application development, and special projects."
+		content="Boutique software agency specializing in AI systems, alignment research, and production applications. Dublin, Ireland."
 	/>
 	<meta property="og:image" content="https://www.blackshoretech.com/logo.png" />
 	<meta property="og:locale" content="en_IE" />
@@ -52,10 +52,10 @@
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:url" content="https://www.blackshoretech.com/" />
-	<meta name="twitter:title" content="Blackshore Technology Limited — Elite Software Engineering" />
+	<meta name="twitter:title" content="Blackshore Technology Limited — AI Systems & Software Engineering" />
 	<meta
 		name="twitter:description"
-		content="Elite software engineering for impossible problems. AI alignment, application development, and special projects."
+		content="Boutique software agency specializing in AI systems, alignment research, and production applications. Dublin, Ireland."
 	/>
 	<meta name="twitter:image" content="https://www.blackshoretech.com/logo.png" />
 
@@ -71,11 +71,11 @@
 			</h1>
 
 			<div class="space-y-8 font-serif text-xl leading-relaxed text-zinc-400 md:text-2xl">
-				<p>Elite software engineering for impossible problems.</p>
+				<p>AI systems. Alignment research. Production applications.</p>
 
 				<p class="text-lg md:text-xl">
-					We specialize in AI alignment, application development, and special projects<br />
-					for organizations that accept nothing less than excellence.
+					We build reliable AI software—from research prototypes to production systems.<br />
+					Deep expertise in machine learning, safety, and scalable architecture.
 				</p>
 			</div>
 
