@@ -14,5 +14,5 @@
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	text-shadow: 0 0 40px rgba(212, 212, 212, 0.4);
+	filter: drop-shadow(0 0 30px rgba(200, 200, 200, 0.3));
 }
